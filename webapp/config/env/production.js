@@ -1,4 +1,4 @@
 module.exports = {
-    db: 'mongodb://admin:admin@ds021356.mlab.com:21356/northwindnode',
+    db: 'mongodb://root:amad_2019@ds015750.mlab.com:15750/profile_api',
     sessionSecret: 'developmentSessionSecret',
 };

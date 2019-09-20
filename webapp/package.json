@@ -2,7 +2,7 @@
   "name": "api_web_app",
   "version": "1.0.0",
   "description": "Advanced Mobile Application Development API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/shahksh1011/gochiApi.git"
   },
+  "start": "node server",
   "author": "Kshitij Shah",
   "license": "ISC",
   "bugs": {
