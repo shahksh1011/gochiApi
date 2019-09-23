@@ -30,19 +30,11 @@ module.exports = function() {
 	app.use(bodyParser.json());
 	app.use(methodOverride());
 
-	// Configure the 'session' middleware
-	app.use(session({
-		saveUninitialized: true,
-		resave: true,
-		secret: config.sessionSecret
-	}));
-
 	// Configure the flash messages middleware
 	app.use(flash());
 
 	// Configure the Passport middleware
 	app.use(passport.initialize());
-	app.use(passport.session());
 
 	// Load the routing files
 	require('../app/routes/users.server.routes.js')(app);

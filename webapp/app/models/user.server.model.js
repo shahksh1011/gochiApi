@@ -9,12 +9,22 @@ var mongoose = require('mongoose'),
 
 // Define a new 'UserSchema'
 var UserSchema = new Schema({
-	firstName: String,
-	lastName: String,
+	firstName: {
+		type: String,
+		required: 'First Name is required',
+		trim: true
+	},
+	lastName: {
+		type: String,
+		required: 'Last Name is required',
+		trim: true
+	},
 	email: {
 		type: String,
 		// Validate the email format
-		match: [/.+\@.+\..+/, "Please fill a valid email address"]
+		match: [/.+\@.+\..+/, "Please fill a valid email address"],
+		unique: true,
+		trim: true
 	},
 	username: {
 		type: String,
@@ -38,13 +48,6 @@ var UserSchema = new Schema({
 	salt: {
 		type: String
 	},
-	provider: {
-		type: String,
-		// Validate 'provider' value existance
-		required: 'Provider is required'
-	},
-	providerId: String,
-	providerData: {},
 	role: {
 		type: String,
 		default: 'User'

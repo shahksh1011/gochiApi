@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Profile Application</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="profileImage">Profile Image</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="emailID">Email Id</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="city">City</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+</resources>
